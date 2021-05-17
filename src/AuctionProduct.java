@@ -1,3 +1,4 @@
+
 /*
  * Name: Christopher Grigsby 
  * Date: 3/22/21
@@ -17,7 +18,9 @@
  * auctioned. 
  */
 
-public class AuctionProduct extends Product
+import java.io.Serializable;
+
+public class AuctionProduct extends Product implements Serializable
 { 	  
 	//INSTANCE VARIABLES
 	private Product obj;  
@@ -198,7 +201,6 @@ public class AuctionProduct extends Product
 			return false; 
 		}
 	} 
-	
 	/**
 	 * Method acceptOffer - accepts the current offer for the product
 	 */
@@ -207,7 +209,7 @@ public class AuctionProduct extends Product
 		if (buyerID != 0)
 		{
 			this.listingStatus = false; 
-			System.out.println("Item sold. Buyer #"+buyerID+" is being notified."); 
+			System.out.println("Item sold for $"+ currentBid +" | Buyer #"+ buyerID +" is being notified."); 
 		}
 		else
 		{
@@ -225,7 +227,7 @@ public class AuctionProduct extends Product
 		if (obj != null)
 		{
 			obj.print(); 
-			System.out.printf("*Auction Status*[CurrentBid: $%.2f | MinimumBid: $%.2f | Active Listing: "+ listingStatus+ "])%n", 
+			System.out.printf("*Auction Status*[CurrentBid: $%.2f | MinimumBid: $%.2f | Active Listing: "+ listingStatus +"]%n", 
 					  currentBid, minimumBid); 
 		}
 		else
@@ -237,6 +239,4 @@ public class AuctionProduct extends Product
 							  currentBid, minimumBid); 	
 		}
 	}
-	
-
 }//class

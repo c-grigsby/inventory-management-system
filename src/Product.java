@@ -1,14 +1,17 @@
+
 /*
  * Name: Christopher Grigsby 
- * Date: 3/22/21
- * Assignment: SemesterProjectPartB
+ * Date: 4/26/21
+ * Assignment: SemesterProjectPartC
  */
 
 /**
  * Class Product - provides a description of a product intended for sale. 
  */
 
-public class Product 
+import java.io.Serializable;
+
+public class Product implements Serializable
 {
 	//INSTANCE VARIABLES 
 	private int productID; 

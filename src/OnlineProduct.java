@@ -1,7 +1,7 @@
 /*
  * Name: Christopher Grigsby 
- * Date: 3/22/21
- * Assignment: SemesterProjectPartB
+ * Date: 4/26/21
+ * Assignment: SemesterProjectPartC
  */
 
 /**
@@ -11,7 +11,10 @@
  * New behaviors include inStock(): which determines the availability of the product, sellProduct(): records a sale of a 
  * product (if inStock), and returnProduct(): records the return of a product. 
  */
-public class OnlineProduct extends Product
+
+import java.io.Serializable;
+
+public class OnlineProduct extends Product implements Serializable
 {
 	//INSTANCE VARIABLES
 	private int productID;  
@@ -130,6 +133,7 @@ public class OnlineProduct extends Product
 	{
 		if ( (qtyAvailable - request) < 0)
 		{
+			System.out.println("\nSorry! Item is OUT OF STOCK."); 
 			return false; 
 		}
 		else

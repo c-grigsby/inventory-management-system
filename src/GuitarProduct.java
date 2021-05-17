@@ -1,7 +1,8 @@
+
 /*
  * Name: Christopher Grigsby 
- * Date: 3/12/21
- * Assignment: SemesterProjectPartB
+ * Date: 4/26/21
+ * Assignment: SemesterProjectPartC
  */
 
 /**
@@ -12,7 +13,9 @@
  * which adds the cost of a soft case to the price of the instrument. 
  */
 
-public class GuitarProduct extends OnlineProduct
+import java.io.Serializable;
+
+public class GuitarProduct extends OnlineProduct implements Serializable
 {
 	//INSTANCE VARIABLES 
 	private String condition;  
@@ -32,7 +35,6 @@ public class GuitarProduct extends OnlineProduct
 		hardCase = 120.00; 
 		softCase = 60.00; 
 	}
-	
 	/**
 	 * Constructor for instance variables 
 	 * @param productID
@@ -174,7 +176,7 @@ public class GuitarProduct extends OnlineProduct
 	{
 		System.out.printf("Guitar Product[ID: %s | %s | Retail: $%.2f | ", getProductID(), getDescription(), getPrice()); 
 		System.out.printf("Make: %s | Condition: %s | Neck: %s | ", getManufacturer(), condition, neckWood); 
-		System.out.printf("Strings: %d | Stock: %d]%n", strings, getQtyAvailable()); 
+		System.out.printf("Strings: %d | In-Stock: %d]%n", strings, getQtyAvailable()); 
 	}
 	/**
 	 * Method menuPrint - simplifies the display
@@ -183,6 +185,6 @@ public class GuitarProduct extends OnlineProduct
 	{
 		System.out.printf("[ID: %s | %s | Retail: $%.2f | ", getProductID(), getDescription(), getPrice()); 
 		System.out.printf("Make: %s | Condition: %s | Neck: %s | ", getManufacturer(), condition, neckWood); 
-		System.out.printf("Strings: %d | Stock: %d]%n", strings, getQtyAvailable()); 
+		System.out.printf("Strings: %d | In-Stock: %d]%n", strings, getQtyAvailable()); 
 	}
 }//class
