@@ -1,9 +1,9 @@
-# Inventory Management System
+## Inventory Management System
 
-This project provides a hierarchy of classes to fulfill the needs of a custom inventory system
+A hierarchy of classes to fulfill the needs of a custom inventory system
 
-## More Info 
-
-* Project requirements specified data was to be permanently stored as objects of these classes
-* Provides the option for product data to be edited as an administrator or items purchased as a general user
-* Developed during a course which aimed to focus upon concepts of object-oriented design
+## Project Specifications
+- Developed in Java
+- Data is permanently stored as objects of these classes
+- Products can be edited as an administrator or purchased as a general user
+- Developed during a course focused upon the concepts of object-oriented design
