@@ -1,7 +1,16 @@
+<div align="center" markdown="1">
+
+<img src="http://artificialinfotech.com/uploads/test/231902-1_iixomgdzrttjmdwbn7cgmw.png" height="150"/>
+
 ## Inventory Management System
 
-A hierarchy of classes to fulfill the needs of a custom inventory system
+Console application providing a hierarchy of classes to fulfill the needs of a custom inventory system
 
+_Coursework for CCU_
+
+</div>
+
+---
 ## Project Specifications
 - Developed in Java
 - Data is persisted via file storage as objects of these classes
