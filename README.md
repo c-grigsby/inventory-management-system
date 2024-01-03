@@ -1,12 +1,12 @@
 <div align="center" markdown="1">
 
-<img src="http://artificialinfotech.com/uploads/test/231902-1_iixomgdzrttjmdwbn7cgmw.png" height="150"/>
+<img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" height="150"/>
 
 ## Inventory Management System
 
 Console application providing a hierarchy of classes to fulfill the needs of a custom inventory system
 
-_Coursework for CCU_
+_Coursework for CSCI 150_
 
 </div>
 
